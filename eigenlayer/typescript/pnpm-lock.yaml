@@ -14,6 +14,9 @@ dependencies:
   path:
     specifier: ^0.12.7
     version: 0.12.7
+  prompts:
+    specifier: ^2.4.2
+    version: 2.4.2
   viem:
     specifier: ^1.21.1
     version: 1.21.1
@@ -22,6 +25,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.10.5
     version: 20.10.5
+  '@types/prompts':
+    specifier: ^2.4.9
+    version: 2.4.9
   tsx:
     specifier: ^4.7.0
     version: 4.7.0
@@ -280,6 +286,13 @@ packages:
       undici-types: 5.26.5
     dev: true
 
+  /@types/prompts@2.4.9:
+    resolution: {integrity: sha512-qTxFi6Buiu8+50/+3DGIWLHM6QuWsEKugJnnP6iv2Mc4ncxE4A/OJkjuVOA+5X0X1S/nq5VJRa8Lu+nwcvbrKA==}
+    dependencies:
+      '@types/node': 20.10.5
+      kleur: 3.0.3
+    dev: true
+
   /abitype@0.9.8:
     resolution: {integrity: sha512-puLifILdm+8sjyss4S+fsUN09obiT1g2YW6CtcQF+QDzxR0euzgEB29MZujC6zMk2a6SVmtttq1fc6+YFA7WYQ==}
     peerDependencies:
@@ -354,6 +367,10 @@ packages:
       ws: 8.13.0
     dev: false
 
+  /kleur@3.0.3:
+    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
+
   /path@0.12.7:
     resolution: {integrity: sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==}
     dependencies:
@@ -366,9 +383,21 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: false
 
+  /prompts@2.4.2:
+    resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
+    engines: {node: '>= 6'}
+    dependencies:
+      kleur: 3.0.3
+      sisteransi: 1.0.5
+    dev: false
+
   /resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
     dev: true
+
+  /sisteransi@1.0.5:
+    resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+    dev: false
 
   /tsx@4.7.0:
     resolution: {integrity: sha512-I+t79RYPlEYlHn9a+KzwrvEwhJg35h/1zHsLC2JXvhC2mdynMv6Zxzvhv5EMV6VF5qJlLlkSnMVvdZV3PSIGcg==}
